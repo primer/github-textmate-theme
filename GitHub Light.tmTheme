@@ -21,11 +21,49 @@
           <string>#c0c0c0</string>
           <key>caret</key>
           <string>#000</string>
+          <key>diffDeleted</key>
+          <string>#ffecec</string>
+          <key>diffAdded</key>
+          <string>#eaffea</string>
+          <key>markdown</key>
+          <string>#f7f7f7</string>
+          <key>inactiveSelection</key>
+          <string>#f5f5f5</string>
+          <key>selectionBorder</key>
+          <string>#f5f5f5</string>
+          <key>findHighlight</key>
+          <string>#ed6a43</string>
+          <key>findHighlightForeground</key>
+          <string>#fff</string>
+          <key>guide</key>
+          <string>#c0c0c0</string>
+          <key>activeGuide</key>
+          <string>#333</string>
+          <key>stackGuide</key>
+          <string>#acacac</string>
+          <key>highlight</key>
+          <string>#464a4d</string>
+          <key>popupCss</key>
+          <string>&lt;![CDATA[html { background-color: #e0e0e0; } h1, h2, h3, h4, h5, h6 { color: #1d3e81; margin-top: 0.2em; margin-bottom: 0.2em; } h1 { font-size: 1.5em; } h2 { font-size: 1.4em; } h3 { font-size: 1.3em; } h4 { font-size: 1.2em; } h5 { font-size: 1.1em; } h6 { font-size: 1em; } blockquote { color: #008080; display: block; font-style: italic; } pre { display: block; } a { color: #183691; font-style: underline; } body { color: #333; background-color: #fff; margin: 1px; font-size: 1em; padding: 0.2em; } .danger { color: #b52a1d; } .important, .attention { color: #795da3; } .caution, .warning { color: #ed6a43; } .note { color: #693a17; }]]&gt;</string>
+          <key>highlightForeground</key>
+          <string>#464a4d</string>
+          <key>tagsOptions</key>
+          <string>underline</string>
+          <key>bracketContentsOptions</key>
+          <string>underline</string>
+          <key>bracketContentsForeground</key>
+          <string>#181818</string>
+          <key>bracketsOptions</key>
+          <string>underline</string>
+          <key>bracketsForeground</key>
+          <string>#181818</string>
+          <key>gutterForeground</key>
+          <string>#333</string>
         </dict>
       </dict>
       <dict>
         <key>scope</key>
-        <string>comment</string>
+        <string>comment, punctuation.definition.comment, string.comment</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -36,7 +74,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>constant, variable.other.constant</string>
+        <string>constant, entity.name.constant, variable.other.constant, variable.language</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -188,6 +226,19 @@
       </dict>
       <dict>
         <key>scope</key>
+        <string>invalid.broken</string>
+        <key>settings</key>
+        <dict>
+          <key>fontStyle</key>
+          <string>bold italic underline</string>
+          <key>foreground</key>
+          <string>#b52a1d</string>
+        </dict>
+        <key>name</key>
+        <string>Invalid - Broken</string>
+      </dict>
+      <dict>
+        <key>scope</key>
         <string>invalid.deprecated</string>
         <key>settings</key>
         <dict>
@@ -213,6 +264,28 @@
         </dict>
         <key>name</key>
         <string>Invalid – Illegal</string>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>invalid.unimplemented</string>
+        <key>settings</key>
+        <dict>
+          <key>fontStyle</key>
+          <string>bold italic underline</string>
+          <key>foreground</key>
+          <string>#b52a1d</string>
+        </dict>
+        <key>name</key>
+        <string>Invalid - Unimplemented</string>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>message.error</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#b52a1d</string>
+        </dict>
       </dict>
       <dict>
         <key>scope</key>
@@ -242,7 +315,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>string.regexp</string>
+        <string>source.regexp, string.regexp</string>
         <key>settings</key>
         <dict>
           <key>fontStyle</key>
@@ -388,7 +461,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>markup.deleted, meta.diff.header.from-file</string>
+        <string>markup.deleted, meta.diff.header.from-file, punctuation.definition.deleted</string>
         <key>settings</key>
         <dict>
           <key>background</key>
@@ -401,7 +474,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>markup.inserted, meta.diff.header.to-file</string>
+        <string>markup.inserted, meta.diff.header.to-file, punctuation.definition.inserted</string>
         <key>settings</key>
         <dict>
           <key>background</key>
@@ -411,6 +484,28 @@
         </dict>
         <key>name</key>
         <string>Markup.inserted</string>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>markup.changed, punctuation.definition.changed</string>
+        <key>settings</key>
+        <dict>
+          <key>background</key>
+          <string>#ffe3b4</string>
+          <key>foreground</key>
+          <string>#ef9700</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>markup.ignored, markup.untracked</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#d8d8d8</string>
+          <key>background</key>
+          <string>#808080</string>
+        </dict>
       </dict>
       <dict>
         <key>scope</key>
@@ -456,6 +551,62 @@
           <string>#1d3e81</string>
         </dict>
       </dict>
+      <dict>
+        <key>scope</key>
+        <string>brackethighlighter.tag, brackethighlighter.curly, brackethighlighter.round, brackethighlighter.square, brackethighlighter.angle, brackethighlighter.quote</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#595e62</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>brackethighlighter.unmatched</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#b52a1d</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>sublimelinter.mark.error</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#b52a1d</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>sublimelinter.mark.warning</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#ed6a43</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>sublimelinter.gutter-mark</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#c0c0c0</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>constant.other.reference.link, string.other.link</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#183691</string>
+          <key>fontStyle</key>
+          <string>underline</string>
+        </dict>
+      </dict>
     </array>
     <key>comment</key>
     <string>GitHub Light syntax theme</string>
@@ -463,6 +614,8 @@
     <string>GitHub Light</string>
     <key>semanticClass</key>
     <string>theme.light.github</string>
+    <key>filename</key>
+    <string>github-light</string>
     <key>uuid</key>
     <string>A1C4DFA0-7031-11E4-9803-0800200C9A66</string>
   </dict>
