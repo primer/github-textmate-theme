@@ -21,6 +21,14 @@
           <string>#832563</string>
           <key>caret</key>
           <string>#fff</string>
+          <key>diffRenamed</key>
+          <string>#f2f9fc</string>
+          <key>diffModified</key>
+          <string>#fff9ea</string>
+          <key>diffDeleted</key>
+          <string>#ffecec</string>
+          <key>diffAdded</key>
+          <string>#eaffea</string>
           <key>inactiveSelection</key>
           <string>#464a4d</string>
           <key>selectionBorder</key>
@@ -258,6 +266,23 @@
         </dict>
         <key>name</key>
         <string>Invalid – Illegal</string>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>carriage-return</string>
+        <key>settings</key>
+        <dict>
+          <key>fontStyle</key>
+          <string>italic underline</string>
+          <key>foreground</key>
+          <string>#f8f8f8</string>
+          <key>background</key>
+          <string>#e63525</string>
+          <key>content</key>
+          <string>^M</string>
+        </dict>
+        <key>name</key>
+        <string>Carriage Return</string>
       </dict>
       <dict>
         <key>scope</key>
