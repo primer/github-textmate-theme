@@ -1,6 +1,6 @@
 {
   "private": true,
-  "version": "0.2.0",
+  "version": "0.4.1",
   "name": "github-textmate-theme",
   "description": "GitHub's official syntax themes as TextMate themes",
   "homepage": "https://github.com/primer/github-textmate-theme#readme",
