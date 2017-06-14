@@ -22,13 +22,13 @@
           <key>caret</key>
           <string>#24292e</string>
           <key>diffRenamed</key>
-          <string>#f1f8ff</string>
+          <string>#fafbfc</string>
           <key>diffModified</key>
-          <string>#fffdef</string>
+          <string>#f9c513</string>
           <key>diffDeleted</key>
-          <string>#ffeef0</string>
+          <string>#d73a49</string>
           <key>diffAdded</key>
-          <string>#f0fff4</string>
+          <string>#34d058</string>
           <key>markdown</key>
           <string>#f7f7f7</string>
           <key>inactiveSelection</key>
